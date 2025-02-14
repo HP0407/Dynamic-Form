@@ -1,0 +1,80 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 0;
+  background-color: #f4f4f4;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark {
+  background-color: #333;
+  color: #f4f4f4;
+}
+
+h1 {
+  color: #333;
+}
+
+body.dark h1 {
+  color: #f4f4f4;
+}
+
+div {
+  margin-bottom: 15px;
+}
+
+label {
+  margin-right: 10px;
+}
+
+input[type='text'],
+input[type='number'],
+input[type='date'],
+input[type='password'],
+select,
+textarea {
+  padding: 5px;
+  margin-left: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+body.dark input[type='text'],
+body.dark input[type='number'],
+body.dark input[type='date'],
+body.dark input[type='password'],
+body.dark select,
+body.dark textarea {
+  background-color: #555;
+  color: #f4f4f4;
+  border: 1px solid #777;
+}
+
+button {
+  padding: 5px 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+.removeControl {
+  background-color: #dc3545;
+}
+
+.removeControl:hover {
+  background-color: #c82333;
+}
+
+body.dark button {
+  background-color: #007bff;
+}
+
+body.dark .removeControl {
+  background-color: #dc3545;
+}

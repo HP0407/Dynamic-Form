@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Form Builder</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Dynamic Form Builder</h1>
+    <div>
+      <label for="controlType">Select Control Type:</label>
+      <select id="controlType">
+        <option value="text">Text Field</option>
+        <option value="checkbox">Checkbox</option>
+        <option value="radio">Radio Button</option>
+        <option value="textarea">Text Area</option>
+        <option value="dropdown">Dropdown Menu</option>
+        <option value="date">Date Picker</option>
+        <option value="number">Number Input</option>
+        <option value="password">Password Field</option>
+        <option value="file">File Upload</option>
+        <option value="color">Color Picker</option>
+      </select>
+      <input type="text" id="controlLabel" placeholder="Enter Control Label" />
+      <button id="addControl">+ Add Control</button>
+    </div>
+    <div id="formControls"></div>
+    <div>
+      <input type="text" id="filename" placeholder="Enter Filename" />
+      <button id="saveForm">Save Form Data</button>
+      <button id="saveLayout">Save Layout</button>
+      <button id="loadLayout">Load Layout</button>
+    </div>
+    <div>
+      <label for="themeSwitcher">Toggle Theme:</label>
+      <select id="themeSwitcher">
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+      </select>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
